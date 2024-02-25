@@ -1,0 +1,21 @@
+<payment_system>
+  <accounts>
+    <account>
+      <account_id REQUIRED>1234</account_id>
+      <balance REQUIRED>5000</balance>
+      <currency REQUIRED>Rupees</currency>
+    </account>
+    <account>...</account>  
+  </accounts>
+  <transactions>  
+    <transaction>
+      <transaction_id REQUIRED>12341</transaction_id>
+      <sender REQUIRED>1234</sender>
+      <recipient REQUIRED>9876</recipient>
+      <amount REQUIRED>2000</amount>
+      <currency>Rupees</currency>
+      <status REQUIRED>completed</status>
+      <timestamp REQUIRED>1.10 pm </timestamp>
+    </transaction>
+  </transactions>
+</payment_system>

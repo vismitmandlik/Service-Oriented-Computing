@@ -1,0 +1,14 @@
+<newspaper>
+    <article>
+        <headline></headline>
+        <byline></byline>
+        <lead></lead>
+        <body></body>
+        <notes></notes>
+    </article>
+    <article>...</article>
+    <author></author>
+    <editor></editor>
+    <data></data>
+    <edition></edition>
+</newspaper>

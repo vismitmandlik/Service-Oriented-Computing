@@ -1,0 +1,22 @@
+<marksheet>
+  <student_name>
+    <first_name>Vismit</first_name>
+    <last_name>Mandlik</last_name>
+  </student_name>
+  <student_id >21CE068</student_id>
+  <institute_name>CSPIT</institute_name>
+  <department_name>CE</department_name>
+  <semester>6</semester>
+  <course_code></course_code>
+  <course_name>B.Tech</course_name>
+  <subjects>
+    <subject>
+      <subject_code>CE374</subject_code>
+      <subject_name>SOC</subject_name>
+      <marks max_marks=70 pass_marks=40 REQUIRED>50</marks>
+    </subject>
+  </subjects>
+  <subjects>...</subject>
+  <sgpa scale=10 >8.98</sgpa>
+  <cgpa scale=10 >9.03</cgpa>
+</marksheet>

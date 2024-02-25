@@ -1,0 +1,33 @@
+<!ELEMENT payment_system (accounts, transactions)>
+
+<!ELEMENT accounts (account+)>
+<!ELEMENT account (account_id, balance, currency)>
+
+<!ELEMENT account_id (#PCDATA)>
+<!ATTLIST account_id id ID #REQUIRED>
+
+<!ELEMENT balance (#PCDATA)>
+<!ATTLIST balance currency CDATA #REQUIRED>
+
+<!ELEMENT currency (#PCDATA)>
+
+<!ELEMENT transactions (transaction+)>
+<!ELEMENT transaction (transaction_id, sender, recipient, amount, currency, status)>
+<!ATTLIST transaction timestamp CDATA #REQUIRED
+
+<!ELEMENT transaction_id (#PCDATA)>
+<!ATTLIST transaction_id id ID #REQUIRED>
+
+<!ELEMENT sender (#PCDATA)>
+<!ATTLIST sender account_ref IDREF #REQUIRED>
+
+<!ELEMENT recipient (#PCDATA)>
+<!ATTLIST recipient account_ref IDREF #REQUIRED>
+
+<!ELEMENT amount (#PCDATA)>
+<!ATTLIST amount currency CDATA #REQUIRED>
+
+<!ELEMENT currency (#PCDATA)>
+
+<!ELEMENT status (#PCDATA)>
+<!ATTLIST status type (pending|completed|failed) #REQUIRED>

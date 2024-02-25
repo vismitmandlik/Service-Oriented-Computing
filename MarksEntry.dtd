@@ -1,0 +1,28 @@
+<!ELEMENT marksheet (student_name, student_id, institute_name, department_name, semester, course_code, course_name, subjects, sgpa, cgpa)>
+
+<!ELEMENT student_name (first_name, last_name)>
+<!ELEMENT first_name (#PCDATA)>
+<!ELEMENT last_name (#PCDATA)>
+
+<!ELEMENT student_id (#PCDATA)>
+
+<!ELEMENT institute_name (#PCDATA)>
+<!ELEMENT department_name (#PCDATA)>
+<!ELEMENT semester (#PCDATA)>
+<!ELEMENT course_code (#PCDATA)>
+<!ELEMENT course_name (#PCDATA)>
+<!ELEMENT subjects (subject+)>
+
+<!ELEMENT subject (subject_code, subject_name, marks)>
+<!ELEMENT subject_code (#PCDATA)>
+<!ELEMENT subject_name (#PCDATA)>
+<!ELEMENT marks (#PCDATA)>
+<!ATTLIST marks max_marks CDATA #REQUIRED>
+<!ATTLIST marks pass_marks CDATA #REQUIRED>
+
+<!ELEMENT sgpa (#PCDATA)>
+<!ATTLIST sgpa scale CDATA "10" #REQUIRED>
+
+<!ELEMENT cgpa (#PCDATA)>
+<!ATTLIST cgpa scale CDATA "10" #REQUIRED>
+<!ATTLIST cgpa total_credits CDATA #REQUIRED>
